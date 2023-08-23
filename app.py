@@ -1,8 +1,8 @@
 from flask import Flask, url_for, render_template, request, redirect, session, g
 from database import get_database
-from werkzeug.security import generate_password_hash, check_password_hash
+# from werkzeug.security import generate_password_hash, check_password_hash
 import os
-import sqlite3
+# import sqlite3
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.urandom(24)
@@ -152,3 +152,5 @@ def logout():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
